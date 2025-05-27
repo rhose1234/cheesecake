@@ -1,18 +1,20 @@
-// import { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/logo.png"
 import { CgMenuLeft } from "react-icons/cg";
+import { MdOutlineClose } from "react-icons/md";
+
 
 
 
 const Navbar = () => {
 
-    // const [isOpen, setIsOpen] = useState(" ")
-    // setIsOpen(e.target.value)
+    const [toggle, setToggle] = useState(false)    
 
-    // const handleOpen = () => {
-    //     isOpen
-    // }
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
 
+    
   return (
     <>
       
@@ -39,9 +41,54 @@ const Navbar = () => {
 
                         <button className="border border-[#6A4028] border-1 rounded-full px-6 py-2 text-[#6A4028] hover:bg-[#6A4028] hover:text-white font-normal text-sm">Sign Up</button>
 
-                        {/* <CgMenuLeft onClick={() => handleOpen()} className="lg:hidden md:hidden flex size-8 text-[#6A4028]" /> */}
+                        {toggle ? (
+                          <MdOutlineClose onClick={() => handleToggle ()} className="lg:hidden md:hidden flex size-8 text-[#6A4028]" />)
+                          :(<CgMenuLeft onClick={() => handleToggle ()} className="lg:hidden md:hidden flex size-8 text-[#6A4028]" />)
+                        }
                
             </div>
+
+            {
+               (toggle &&
+                          <ul className="items-center md:hidden lg:hidden justify-center flex flex-col gap-y-10 text-sm font-normal text-white rounded-xl bg-[#6A4028] py-10 h-100vh">
+                            <li>
+                                <a className="bg-white text-[#6A4028] px-7 py-4 rounded-xl ml-0" href="/">Home</a>
+                            </li>
+                             <li>
+                                <a href="#about">About</a>
+                            </li>
+                              <li>
+                                <a href="#blog">Blog</a>
+                            </li>
+                             <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                             <li>
+                                <a href="#menu">Menu</a>
+                            </li>
+                        </ul>)
+            }
+             {
+               (!toggle &&
+                          <ul className="hidden items-center md:hidden lg:hidden flex flex-row md:gap-x-14 text-sm font-normal text-white rounded-xl bg-[#6A4028]  pe-10 py-3">
+                            <li>
+                                <a className="bg-white text-[#6A4028] px-7 py-4 rounded-xl ml-0" href="/">Home</a>
+                            </li>
+                             <li>
+                                <a href="#about">About</a>
+                            </li>
+                              <li>
+                                <a href="#blog">Blog</a>
+                            </li>
+                             <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                             <li>
+                                <a href="#menu">Menu</a>
+                            </li>
+                        </ul>
+               )
+            }
               </nav>
     </>
   )
