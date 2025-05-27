@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Menu from './Components/Menu';
 import Blog from './Components/Blog';
-import Contact from './Components/contact';
+import Contact from './Components/Contact';
 import Navbar from './Components/Navbar';
 
 function App() {
