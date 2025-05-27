@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Menu from './Components/Menu';
 import Blog from './Components/Blog';
+import Contact from './Components/contact';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
    <About />
    <Menu />
    <Blog />
+   <Contact />
     </>
   )
 }

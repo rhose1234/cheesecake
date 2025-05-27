@@ -8,7 +8,6 @@ import { FiChevronRight } from "react-icons/fi";
 
 
 
-
 const Menu = () => {
 
     const CardItems = [
@@ -40,12 +39,12 @@ const Menu = () => {
   return (
     <>
       <div className="bg-[#6A4028]  ">
-        <div className="container mx-auto md:px-28 px-6 py-4 md:py-4">
+        <div className="container mx-auto md:px-28 px-6 py-4 md:py-10 max-w-full overflow-x-hidden">
         <h1 className="text-center mt-8 text-5xl text-[#FFF8E1]" >Our Menu</h1>
 
         <div className="flex flex-col md:flex-row md:gap-y-0 gap-y-8 gap-x-10 mt-20 items-center justify-between " >
         {CardItems.map((item) => (
-     <div className="bg-white  px-10 py-4 rounded shadow-lg" key={item.id} data-aos={item.fade}>
+     <div className="bg-white  px-10 py-4 rounded shadow-2xl" key={item.id} data-aos={item.fade}>
         <img src={item.image} className="size-full mb-6"/>
         <h4 className="text-xl font-semibold mb-1 text-[#6A4028]">{item.name}</h4>
         <p className="text-sm mb-0">{item.description}</p>

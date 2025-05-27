@@ -16,7 +16,7 @@ h1,h2,h3,h5,h5,h6{
   font-family: "Inika", serif;
 
 }
-p{
+p, button, a{
   font-family: "Inter", sans-serif;
   /* width: 380px; */
 }

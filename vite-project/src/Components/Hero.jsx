@@ -6,7 +6,7 @@ import sideimg from "../assets/abit-home.png"
 const Hero = () => {
   return (
     <>
-      <div className='Hero_background min-h-[100vh] flex items-center w-[100%] '>
+      <div className='Hero_background min-h-[100vh] max-w-full overflow-x-hidden flex items-center'>
         <div className='container mx-auto md:px-28 px-4 py-8 md:py-0 flex flex-col md:flex-row md:gap-y-0 gap-y-10 items-center justify-center md:justify-between gap-x-0' data-aos="zoom-in-up" >
           <div className='md:w-1/2 '>
             <h1 className='w-full text-5xl font-medium leading-tight text-[#523728] mb-8'>Bite The World of Cheesecake Wonders</h1>
