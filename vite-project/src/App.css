@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+.Hero_background{
+  background: url(./assets/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100% !important;
+}
+ /* font-family: "Inika", serif;
+  font-family: "Inter", sans-serif; */
+
+h1,h2,h3,h5,h5,h6{
+  font-family: "Inika", serif;
+
+}
+p{
+  font-family: "Inter", sans-serif;
+  /* width: 380px; */
+}
+.about_section{
+background: #fff8e1;
+}
+.about_section p, h4{
+  color: rgba(0, 0, 0, 0.7);
+}
