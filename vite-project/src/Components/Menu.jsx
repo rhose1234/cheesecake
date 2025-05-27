@@ -34,7 +34,7 @@ const Menu = () => {
             price : "$10.00",
             image : chocolate,
              fade : "zoom-in-left"
-        }
+         }
     ]
   return (
     <>
