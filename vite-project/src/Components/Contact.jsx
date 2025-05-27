@@ -7,12 +7,12 @@ import { FaInstagram, FaYoutubeSquare } from "react-icons/fa";
 const Contact = () => {
   return (
     <>
-          <div className='h-auto max-w-full overflow-x-hidden bg-[#6A4028]' data-aos="zoom-in" data-aos-duration="1000">
-            <div className='container mx-auto md:px-28 px-6 py-10 md:py-20 flex flex-col md:flex-row md:gap-y-0 gap-y-4 justify-between items-center gap-x-10'>
+          <div className='h-auto max-w-full overflow-x-hidden bg-[#6A4028]' data-aos="zoom-in" data-aos-duration="1000" id='contact'>
+            <div className='container mx-auto lg:px-28 md:px-8 px-6 py-10 md:py-20 flex flex-col md:flex-row md:gap-y-0 gap-y-4 justify-between items-center gap-x-10'>
             <div className='w-full mt-10 '>
             <h1 className='text-5xl mb-8 text-normal text-[#FFF8E1] '>Contact Us</h1>
             <p className='text-[#FFF8E1]  text-sm'>Need to get in touch with us? Either fill out the form with your inquiry or find the department!</p>
-                <img src={contact} className='size-100'/>
+                <img src={contact} className='size-100 md:size-70 '/>
 
                 <div className='flex flex-row gap-x-6 mt-6'>
                 <FaFacebook className='size-9 p-2 bg-white text-[#6A4028] rounded-full' /> 

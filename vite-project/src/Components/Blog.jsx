@@ -33,16 +33,16 @@ const Blog = () => {
     ]
   return (
     <>
-      <div className='bg-[#FFF8E1]'>
-       <div className='container mx-auto md:px-28 px-10 py-10 md:py-16 max-w-full overflow-x-hidden'>
+      <div className='bg-[#FFF8E1]' id="blog">
+       <div className='container mx-auto lg:px-28 md:px-8 px-10 py-10 md:py-16 max-w-full overflow-x-hidden'>
       <h1 className='text-5xl text-center text-[#6A4028]  '>Our Blog </h1>
       <p className='text-xl text-center text-[#6A4028] mt-4'>Our Recent Posts</p>
      
-        <div className='card_Container flex  flex-col md:flex-row justify-between items-center gap-x-10 mt-16 gap-y-8 md:gap-y-0'>
+        <div className='card_Container flex  flex-col md:flex-row justify-between items-center md:gap-x-6 lg:gap-x-10 mt-16 gap-y-8 md:gap-y-0'>
               
               {BlogItems.map((item) => (
-                <div className='card bg-[#FFF8E1] shadow-2xl px-8 py-6 text-start items-center md:w-[600px] md:h-[600px] ' key={item.id} data-aos={item.scroll}>
-                 <img src={item.image}  className='size-full md:size-70 mb-8' />
+                <div className='card bg-[#FFF8E1] shadow-2xl px-8 py-6 text-start items-center lg:w-[600px] lg:h-[600px] md:w-auto md:h-auto ' key={item.id} data-aos={item.scroll}>
+                 <img src={item.image}  className='size-full md:size-50 lg:size-70 mb-8' />
                  <p className='text-start text-[#BB6939] text-sm mb-2'>{item.paragraph}</p>
                  <h3 className='text-[#734B33] font-bold text-xl'>{item.title}</h3>
                  <p className='text-[#734B33] mb-8 mt-6 text-sm'>{item.description}</p>

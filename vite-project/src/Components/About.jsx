@@ -5,13 +5,13 @@ const About = () => {
   return (
     <>
     
-    <div className='about_section h-auto max-w-full overflow-x-hidden'>
-    <div className='container mx-auto md:px-28 px-4 py-10 md:py-8 flex flex-col md:flex-row md:gap-y-0 gap-y-4 items-center gap-x-10  '>
+    <div className='about_section h-auto max-w-full overflow-x-hidden' id="about">
+    <div className='container mx-auto lg:px-28 md:px-8 px-4 py-10 md:py-8 flex flex-col md:flex-row md:gap-y-0 gap-y-4 items-center gap-x-10  '>
     <div className='w-full' data-aos="zoom-in-right">
     <img src={strawberry} className='md:mb-24 ' />
     </div>
     <div className='w-full' data-aos="zoom-in-left">
-    <h1 className='text-xl md:text-5xl mb-1'>We Love Cheesecake</h1>
+    <h1 className='text-xl md:text-3xl lg:text-5xl mb-1 text-[#6A4028]'>We Love Cheesecake</h1>
     <h4 className='text-md mb-10'>Discover Our Cheesecake Story</h4>
 
     <p className='text-sm'>At Cheesecake Love, quality is our cornerstone. Each cheesecake is crafted with the finest ingredients, meticulous attention to detail, and a dash of creativity. </p>

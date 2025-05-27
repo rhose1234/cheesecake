@@ -6,12 +6,14 @@ import 'aos/dist/aos.css';
 import Menu from './Components/Menu';
 import Blog from './Components/Blog';
 import Contact from './Components/contact';
+import Navbar from './Components/Navbar';
 
 function App() {
   
 
   return (
     <>
+    <Navbar />
      <Hero />
    <About />
    <Menu />
