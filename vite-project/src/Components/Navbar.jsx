@@ -40,8 +40,6 @@ const Navbar = () => {
                         <button className="border border-[#6A4028] border-1 rounded-full px-6 py-2 text-[#6A4028] hover:bg-[#6A4028] hover:text-white font-normal text-sm">Sign Up</button>
 
                         {/* <CgMenuLeft onClick={() => handleOpen()} className="lg:hidden md:hidden flex size-8 text-[#6A4028]" /> */}
-
-
                
             </div>
               </nav>
